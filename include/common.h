@@ -3,6 +3,14 @@
 
 #include <stddef.h>
 
+enum libcontainers_status
+{
+	LIBCONTAINERS_OK = 0,
+	LIBCONTAINERS_MEM_ERROR,
+	LIBCONTAINERS_KEY
+};
+
+
 #ifdef __cplusplus
 #define EXTERN_C extern "C" {
 #define EXTERN_C_END }
