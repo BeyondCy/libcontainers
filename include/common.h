@@ -12,11 +12,11 @@ enum libcontainers_status
 
 
 #ifdef __cplusplus
-#define EXTERN_C extern "C" {
-#define EXTERN_C_END }
+#define LIBCONTAINERS_EXTERN_C extern "C" {
+#define LIBCONTAINERS_EXTERN_C_END }
 #else
-#define EXTERN_C
-#define EXTERN_C_END
+#define LIBCONTAINERS_EXTERN_C
+#define LIBCONTAINERS_EXTERN_C_END
 #endif
 
 #ifndef LIBCONTAINERS_NO_COLLISIONS

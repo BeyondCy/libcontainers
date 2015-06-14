@@ -6,7 +6,7 @@ typedef struct _libcontainers_hashmap *libcontainers_hashmap;
 typedef int (*libcontainers_hashmap_compare)(void *a, void *b);
 typedef unsigned int (*libcontainers_hashmap_hash)(void *key);
 
-EXTERN_C
+LIBCONTAINERS_EXTERN_C
 
 extern libcontainers_hashmap libcontainers_hashmap_new(size_t element_size);
 extern void libcontainers_hashmap_delete(libcontainers_hashmap pmap);
@@ -40,4 +40,4 @@ static inline void hashmap_set_hash_function(hashmap pmap, hashmap_hash hash_fun
 
 #endif
 
-EXTERN_C_END
+LIBCONTAINERS_EXTERN_C_END

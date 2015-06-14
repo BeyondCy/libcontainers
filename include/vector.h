@@ -6,7 +6,7 @@
 struct _libcontainers_vector;
 typedef struct _libcontainers_vector *libcontainers_vector;
 
-EXTERN_C
+LIBCONTAINERS_EXTERN_C
 
 libcontainers_vector libcontainers_vector_new(size_t element_size);
 void libcontainers_vector_delete(libcontainers_vector pvec);
@@ -22,6 +22,6 @@ void libcontainers_vector_pop_back(libcontainers_vector pvec);
 void *libcontainers_vector_back(libcontainers_vector pvec);
 void *libcontainers_vector_at(libcontainers_vector pvec, size_t index);
 
-EXTERN_C_END
+LIBCONTAINERS_EXTERN_C_END
 
 #endif
