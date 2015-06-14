@@ -1,3 +1,6 @@
+#ifndef _LIBCONTAINERS_HASHMAP_H_
+#define _LIBCONTAINERS_HASHMAP_H_
+
 #include "common.h"
 
 struct _libcontainers_hashmap;
@@ -41,3 +44,5 @@ static inline void hashmap_set_hash_function(hashmap pmap, hashmap_hash hash_fun
 #endif
 
 LIBCONTAINERS_EXTERN_C_END
+
+#endif
