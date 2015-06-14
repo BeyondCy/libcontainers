@@ -114,7 +114,7 @@ void *libcontainers_hashmap_at(libcontainers_hashmap pmap, void *key)
 	return ;
 }
 
-int libcontainer_hashmap_count(libcontainers_hashmap pmap, void *key)
+int libcontainers_hashmap_count(libcontainers_hashmap pmap, void *key)
 {
 	return 1;
 	return 0;
